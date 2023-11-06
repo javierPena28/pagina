@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Market D'ONE</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: #f7f7f7;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+        .registration-form {
+            max-width: 400px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #ff5722;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <h1 >Envio GRATIS en Colombia por compras superiores a $99.000</h1>
+        <nav>
+            <ul>
+                <div>
+                    <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+
+                </div>
+                <div class="user-nav">
+                    <a href="registro.html"><img src="media\usuario.jpg" alt="Registro"></a>
+                    <a href="#"><img src="media\Lupa.jpg" alt="Buscar"></a>
+                    <a href="#"><img src="media\Bolsa.jpg" alt="Carrito"></a>
+                </div>
+        
+            </ul>
+        </nav>
+    </header>
+    <div class="header">
+        <h1>Registro en Market D'ONE</h1>
+    </div>
+    
+    <div class="registration-form">
+        <h2>Registro</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <label for="confirmar-contrasena">Confirmar Contraseña:</label>
+            <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+
+            <input type="submit" value="Registrar">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Market D'ONE</p>
+    </footer>
+</body>
+</html>

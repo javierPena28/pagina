@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" type="text/css" href="css\login-styles.css">
+</head>
+<body>
+    <div class="login">
+        <h1>Inicio de sesión</h1>
+        <form method="post" id="loginForm">
+            <div class="username">
+                <input type="text" name="usuario" id="usuario" required>
+                <label>Nombre de usuario</label>
+            </div>
+            <div class="contrasena">
+                <input type="password" name="contrasena" id="contrasena" required>
+                <label>Contraseña</label>
+            </div>
+            <div class="Recordar">¿Olvidó su contraseña?</div>
+            <input type="submit" value="Iniciar">
+            <div class="registrarse">
+                Quiero hacer el <a href="#">registro</a>
+            </div>
+        </form>
+    </div>
+  
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Evita que se envíe el formulario
+
+            var usuario = document.getElementById("usuario").value;
+            var contrasena = document.getElementById("contrasena").value;
+
+            if (usuario === "123" && contrasena === "santiago") {
+                // Credenciales correctas, redirige al usuario a la página de inicio
+                window.location.href = "inicio.html";
+            } else {
+                // Credenciales incorrectas, muestra un mensaje de error
+                alert("Credenciales incorrectas. Inténtalo de nuevo.");
+            }
+        });
+    </script>
+</body>
+</html>
