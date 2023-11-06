@@ -11,5 +11,8 @@ La página web "Market D'WAN" es una plataforma de comercio electrónico que ten
 
 Credenciales login
 
-usuario: 123
-contraseña: santiago
+usuario: usuario
+contraseña: 123
+
+Al ejecutar el login, se pedira el ingreso de estos datos, luego se redireccionará al inicio
+
